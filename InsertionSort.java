@@ -14,7 +14,7 @@ public class InsertionSort {
         for (int i = 1; i < len; i++) {
             for (int j = i; j > 0; j--) {
                 if (inputList[j-1] > inputList[j]) {
-                    //swap values at inputList[i] and inputList[j+1]
+                    //swap values at inputList[j] and inputList[j-1]
                     int temp = inputList[j];
                     inputList[j] = inputList[j-1];
                     inputList[j-1] = temp;
