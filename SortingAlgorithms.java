@@ -17,7 +17,7 @@ public class SortingAlgorithms {
         //int[] inputList = {1,2,3,4,5,6,7,8,9} <---best case senario
         System.out.println(Arrays.toString(inputList));
         
-        System.out.println("Enter 1 for Bubble Sort, 2 for Selection Sort, 3 for Insertion Sort:");
+        System.out.println("Enter 1 for Bubble Sort, 2 for Selection Sort, 3 for Insertion Sort, 4 for Merge Sort:");
         Scanner sortType = new Scanner(System.in);
         int n = sortType.nextInt();
       
@@ -31,6 +31,9 @@ public class SortingAlgorithms {
             case 3:
                 InsertionSort.sort(inputList);
                 break;
+            case 4:
+                MergeSort.sort(inputList);
+                break;   
             default:
                 System.out.println("Wrong Selection");
                 break;
